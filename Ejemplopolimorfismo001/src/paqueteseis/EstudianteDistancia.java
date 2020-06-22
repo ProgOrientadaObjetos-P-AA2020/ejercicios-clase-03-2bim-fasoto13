@@ -6,18 +6,25 @@
 package paqueteseis;
 
 public class EstudianteDistancia extends Estudiante {
+
     /*1.  Declarar
         numeroAsignaturas: Entero 
         costoAsginatura: Real 
-    */ 
-    
+     */
+
     int numeroAsignaturas;
     double costoAsignatura;
-    
+
     //  Métodos establecer y calcular para los datos o atributos de la clase
-    
-    // 2.  Método establecerNumeroAsginaturas(numero: Real)
-    public void establecerNumeroAsginaturas(int numero){
+    public EstudianteDistancia(String n, String ap){
+        super(n, ap);
+        
+    }
+
+
+
+// 2.  Método establecerNumeroAsginaturas(numero: Real)
+public void establecerNumeroAsginaturas(int numero){
         numeroAsignaturas = numero;
     }
     
@@ -28,7 +35,7 @@ public class EstudianteDistancia extends Estudiante {
 
     // 4.  Método calcularMatriculaDistancia()
     @Override
-    public void calcularMatricula(){
+        public void calcularMatricula(){
         matricula = numeroAsignaturas * costoAsignatura;
     }
 

@@ -9,6 +9,40 @@ package paquetesiete;
  *
  * @author reroes
  */
-public class Rombo {
-    
+public class Rombo extends Figura {
+
+    private double diagonalMayor;
+    private double diagonalMenor;
+
+    public void establecerDiagonalMayor(double dM) {
+
+        diagonalMayor = dM;
+
+    }
+
+    public void establecerDiagonalMenor(double dMe) {
+
+        diagonalMenor = dMe;
+
+    }
+
+    @Override
+    public void calcularArea() {
+
+        area = (diagonalMayor * diagonalMenor) / 2;
+
+    }
+
+    public double obtenerDiagonalMayor() {
+
+        return diagonalMayor;
+
+    }
+
+    public double obtenerDiagonalMenor() {
+
+        return diagonalMenor;
+
+    }
+
 }

@@ -6,6 +6,7 @@
 package paqueteseis;
 
 public class EstudiantePresencial extends Estudiante{
+    
     /*1.  Declarar
         numeroCreditos: Entero 
         costoCredito: Real 
@@ -15,6 +16,11 @@ public class EstudiantePresencial extends Estudiante{
    
     //  Métodos establecer y calcular para los datos o atributos de la clase
     // 2.  Método establecerNumeroCreditos(numero: Real)
+    
+    public EstudiantePresencial(String n, String ap){
+        super(n, ap);
+        
+    }
     public void establecerNumeroCreditos(int numero){
         numeroCreditos = numero;
     }
