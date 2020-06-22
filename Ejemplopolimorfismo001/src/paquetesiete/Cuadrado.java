@@ -31,5 +31,16 @@ public class Cuadrado extends Figura {
         return lado;
 
     }
+    
+    @Override
+    public String toString() {
+        
+        String cadenaFinal = String.format("%s", super.toString());
+        
+        cadenaFinal = String.format("Cuadrado: %s", cadenaFinal);
+        return cadenaFinal;
+
+    }
+
 
 }

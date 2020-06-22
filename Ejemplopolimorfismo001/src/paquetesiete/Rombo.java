@@ -44,5 +44,13 @@ public class Rombo extends Figura {
         return diagonalMenor;
 
     }
+    
+    public String toString() {
+        String cadenaFinal = String.format("%s", super.toString());
+        cadenaFinal = String.format("Triangulo: %s", cadenaFinal);
+        return cadenaFinal;
+
+    }
+
 
 }

@@ -43,5 +43,13 @@ public class Triangulo extends Figura {
         return altura;
 
     }
+    
+    public String toString() {
+        String cadenaFinal = String.format("%s", super.toString());
+        cadenaFinal = String.format("Triangulo: %s", cadenaFinal);
+        return cadenaFinal;
+
+    }
+
 
 }

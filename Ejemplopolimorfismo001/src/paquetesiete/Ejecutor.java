@@ -44,6 +44,7 @@ public class Ejecutor {
         numFiguras = sc.nextInt();
 
         for (int i = 0; i < numFiguras; i++) {
+            
             System.out.println("BIENVENIDO:");
             System.out.println("INGRESE [1] AREA CUADRADO | [2] AREA ROMBO | "
                     + "[3] AREA TRIANGULO");
